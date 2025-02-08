@@ -1,11 +1,11 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 @media screen and (max-width: 600px) {
-    body{
+    body {
         background-color: green;
         width: 50%;
         margin: 10px;
@@ -14,8 +14,17 @@
         font-size: 30px;
     }
 }
+@media screen and (min-width: 1500px) {
+    body {
+        background-color: lightgreen;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+}
 .flex_right { 
-height: 60px;
 padding: 20px;
 border: 5px solid black;
 display: flex;
@@ -23,7 +32,7 @@ justify-content: right;
 align-items:center
 }
 .flex_center {
-    padding: 20px;
+padding: 20px;
 border: 5px solid black;
 display: flex;
 justify-content: center;
@@ -50,23 +59,53 @@ line-height: 75px;
 font-size: 30px;
 }
 .position {
-background-color: pink;
+background-color: blue;
 width: 50%;
 margin: 10px;
 text-align: center;
 line-height: 75px;
 font-size: 30px;
+color: white;
+font-weight: bold;
+border: 5px dashed;
 }
 #idSelector {
-    font-size: 20px;
-}
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    color: darkorchid;
+    }
+.classSelector {
+    font-size: 35px;
+    text-align: center;
+    list-style: none;
+    font-style: italic;
+    color: darkmagenta;
+    }
 .classDiv {
-    background-color: purple;
+    background-color: lightblue;
     margin: 10px;
+    border: 3px solid grey;
+    text-align: center;
 }
 #box_model {
     width: 200px; 
     padding: 20px;
     border: 5px solid black;
     margin: 10px;
+}
+h2 {
+    font-size: 40px;
+    font-family: Monospace;
+    border-bottom: dotted;
+    border-width: 5px;
+    text-align: center;
+    font-style: italic;
+    padding: 25px;
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
 }

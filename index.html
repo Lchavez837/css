@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="stylesheet" href="styles.css">  -->
     <style>
         @media screen and (max-width: 600px) {
-            body{
+            body {
                 background-color: green;
                 width: 50%;
                 margin: 10px;
@@ -16,8 +16,17 @@
                 font-size: 30px;
             }
         }
+        @media screen and (min-width: 1500px) {
+            body {
+                background-color: lightgreen;
+                width: 50%;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+        }
         .flex_right { 
-        height: 60px;
         padding: 20px;
         border: 5px solid black;
         display: flex;
@@ -52,25 +61,55 @@
         font-size: 30px;
         }
         .position {
-        background-color: pink;
+        background-color: blue;
         width: 50%;
         margin: 10px;
         text-align: center;
         line-height: 75px;
         font-size: 30px;
+        color: white;
+        font-weight: bold;
+        border: 5px dashed; 
         }
         #idSelector {
-            font-size: 20px;
+        font-size: 30px;
+        text-align: center;
+        list-style: none;
+        font-weight: bold;
+        color: darkorchid;
+        }
+        .classSelector {
+        font-size: 35px;
+        text-align: center;
+        list-style: none;
+        font-style: italic;
+        color: darkmagenta;
         }
         .classDiv {
-            background-color: purple;
-            margin: 10px;
+        background-color: lightblue;
+        margin: 10px;
+        border: 3px solid grey;
+        text-align: center;
         }
         #box_model {
-            width: 200px; 
-            padding: 20px;
-            border: 5px solid black;
-            margin: 10px;
+        width: 200px; 
+        padding: 20px;
+        border: 5px solid black;
+        margin: 10px;
+        }
+        h2 {
+        font-size: 40px;
+        border-bottom: dotted;
+        border-width: 5px;
+        text-align: center;
+        font-family: Monospace;
+        font-style: italic;
+        padding: 25px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -140,7 +179,7 @@
         </div>
         <div class="boxes">2
         </div>
-        <div>3
+        <div class="boxes">3
         </div>
         <div class="boxes">4
         </div>
@@ -180,6 +219,7 @@
     <p>Media queries are used to make web pages responsive to different screen sizes.</p>
 
     <div>Shrink screen below 600px</div>
+    <div>Resize screen above 1500px</div>
 
 
 
@@ -205,7 +245,7 @@
     <h2>Selectors</h2>
     <ul>
         <li id="idSelector">id - uses #</li>
-        <li>class - uses .</li>
+        <li class="classSelector">class - uses .</li>
     </ul>
 
     <div class="classDiv">class div</div>
